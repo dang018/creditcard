@@ -29,7 +29,7 @@ def index():
         model = load_model("CCD")
         pred = model.predict([[float(income),float(age),float(loan)]])
         print(pred)
-        s = "Will the credit card default :" + str(pred)
+        s = "The predicted credit card default score is :" + str(pred)
         return(render_template("index.html",result=s))
     else:
         return(render_template("index.html",result="Welcome to the application!"))
