@@ -32,7 +32,7 @@ def index():
         s = "Will the credit card default :" + str(pred)
         return(render_template("index.html",result=s))
     else:
-        return(render_template("index.html",result="2"))
+        return(render_template("index.html",result="Welcome to the application!"))
 
 
 # In[ ]:
